@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+       var pin = 0000;
+
+        var checkPin = prompt("Enter our pin");
+
+        if(checkPin == pin)
+        {
+            var choice =prompt("1: for widraw  2: for transfer");
+
+            if(choice == 1)
+            {   
+                var amount = prompt("1:500   2: 1000   3:  5000  4:other");
+
+                if(amount == 1)
+                {
+                    alert("your widraw amount is 500");
+                }
+                else if(amount == 2)
+                {
+                    alert("your widraw amount is 1000");
+                }
+                else if(amount == 2)
+                {
+                    alert("your widraw amount is 5000");
+                }
+                else if(amount == 4)
+                {   
+                    var otherAmount = prompt("Enter your amount");
+
+                    if(isNaN(otherAmount))  // isNAN (is  not a number)
+                    {
+                        alert("please enter a number only" );
+
+                    }
+                    else
+                    {
+
+                        if(otherAmount % 500 == 0)
+                        {
+                            alert("your widraw amount is "+otherAmount );
+
+                        }
+                        else{
+                            alert(" your amount is invalid");
+                        }
+
+
+                        // alert("your widraw amount is "+otherAmount );
+                        
+                    }
+
+                    
+                }
+            
+
+            }
+            else if(choice == 2)
+            {
+            document.write("tranfer ");
+                
+            }
+
+        }
+        else{
+            document.write("Incorrect pn");
+        }
+    </script>
+
+
+    
+</body>
+</html>
