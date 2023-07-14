@@ -8,28 +8,81 @@
 </head>
 <body>
     <script>
-        function greetings()
-        {
-            document.write("good morning");
-            document.write("good morning");
-            document.write("good morning");
-            document.write("good morning");
-            document.write("good morning");
-            document.write("good morning");
-            document.write("good morning");
-            document.write("good morning");
+        // function greetings()
+        // {
+        //     document.write("good morning");
+        //     document.write("good morning");
+        //     document.write("good morning");
+        //     document.write("good morning");
+        //     document.write("good morning");
+        //     document.write("good morning");
+        //     document.write("good morning");
+        //     document.write("good morning");
 
-        }
+        // }
 
 
 
-        greetings();
-        greetings();
-        greetings();
-        greetings();
-        greetings();
-        greetings();
-        greetings();
+        // greetings();
+        // greetings();
+        // greetings();
+        // greetings();
+        // greetings();
+        // greetings();
+        // greetings();
+
+            //types of function
+
+                //1: system defined 
+                //2: user defined
+
+            //1: non parametric function
+            //2: parametric function
+
+            /* non parametric function */
+            // function sum()
+            // {
+            //     //function body
+            //     var num1=65;
+            //     var num2=5;
+
+            //     document.write(num1+num2);
+            // }
+            
+            // sum();
+
+            // function sumPara(num1, num2) // here num1 and num2 are parameters
+            // {
+            //     document.write(num1+num2);
+            // }
+
+            // sumPara(5,6); // here 5 and 6 are arguments
+
+
+            // function sumPara(num1=0, num2=0) // here num1 and num2 are parameters
+            // {
+            //     document.write(num1+num2);
+            // }
+
+            // sumPara(5,5); 
+
+            //return type function
+
+            var actualSalary = parseInt(prompt("enter your salary"));
+
+            function bonus(salary)
+            {
+                bonusValue = salary * 0.2;
+                return bonusValue;
+            }
+
+            
+
+
+            var eidBonus = bonus(actualSalary) + actualSalary;
+
+            document.write("Salary after bonus"+eidBonus);
+
 
     </script>
     
