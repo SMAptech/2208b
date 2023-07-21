@@ -68,20 +68,56 @@
 
             //return type function
 
-            var actualSalary = parseInt(prompt("enter your salary"));
+            // var actualSalary = parseInt(prompt("enter your salary"));
 
-            function bonus(salary)
-            {
-                bonusValue = salary * 0.2;
-                return bonusValue;
-            }
+            // function bonus(salary)
+            // {
+            //     bonusValue = salary * 0.2;
+            //     return bonusValue;
+            // }
 
             
 
 
-            var eidBonus = bonus(actualSalary) + actualSalary;
+            // var eidBonus = bonus(actualSalary) + actualSalary;
 
-            document.write("Salary after bonus"+eidBonus);
+            // document.write("Salary after bonus"+eidBonus);
+
+
+
+
+
+            var currentSalary = parseInt( prompt("enter your salary"));
+            var exp =parseInt(prompt("enter your experience in years"));
+            function salaryBous(currentSalaryPara,expPara)
+            {
+                
+
+                if(expPara > 3)
+                {
+                    var newSalary = currentSalary * 0.2;
+
+                }
+                else if(expPara > 2)
+                {
+                    var newSalary = currentSalary * 0.15;
+
+                }
+                else if(expPara >1)
+                {
+                    var newSalary = currentSalary * 0.1;
+                }
+                else
+                {
+                    alert("no bonus");
+                }
+
+
+                return newSalary;
+            }
+
+            var incSalary = currentSalary + salaryBous(currentSalary,exp);
+            document.write("your new salary is" + incSalary);
 
 
     </script>
